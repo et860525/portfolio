@@ -25,13 +25,9 @@ const LinkItem = ({ href, children }) => {
 }
 
 const Navbar = () => {
+  const bg_color = useColorModeValue('orange.100', '#373737')
   return (
-    <Box
-      position="relative"
-      as="nav"
-      w="100%"
-      bg={useColorModeValue('#f7f2e6', '#002b36')}
-    >
+    <Box position="fixed" as="nav" w="100%" bg={bg_color} zIndex="100">
       <Container
         display="flex"
         maxW="container.md"
@@ -52,8 +48,8 @@ const Navbar = () => {
           width={{ base: 'full', md: 'auto' }}
         >
           <ThemeToggleButton />
-          <LinkItem href="/project">Project</LinkItem>
-          <LinkItem href="/posts">Posts</LinkItem>
+          <LinkItem href="/">About Me</LinkItem>
+          <LinkItem href="/projects">Project</LinkItem>
         </Stack>
 
         <Box
@@ -61,7 +57,7 @@ const Navbar = () => {
           display={{ base: 'flex', md: 'none' }}
         >
           <ThemeToggleButton />
-          <Menu>
+          <Menu isLazy>
             <MenuButton
               as={IconButton}
               aria-label="Options"
@@ -70,11 +66,11 @@ const Navbar = () => {
               variant="outline"
             />
             <MenuList>
-              <NextLink href="/project" passHref>
-                <MenuItem as={Link}>Project</MenuItem>
+              <NextLink href="/" passHref>
+                <MenuItem as={Link}>About Me</MenuItem>
               </NextLink>
-              <NextLink href="/posts" passHref>
-                <MenuItem as={Link}>Posts</MenuItem>
+              <NextLink href="/projects" passHref>
+                <MenuItem as={Link}>Project</MenuItem>
               </NextLink>
             </MenuList>
           </Menu>

@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import { Container } from '@chakra-ui/react'
 import Navbar from './navbar'
 import Footer from './footer'
 
-export default function Layout({ title, children }) {
+export default function Layout({ children, title }) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{`${title} - Mango Yu`}</title>
       </Head>
       <Navbar />
       {children}

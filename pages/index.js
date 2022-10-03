@@ -15,12 +15,12 @@ import Paragraph from '../components/paragraph'
 import { SiTwitter, SiInstagram, SiGithub } from 'react-icons/si'
 
 const Home = () => {
-  const bg = useColorModeValue('#FFFAEE', '#002b36')
+  const bg = useColorModeValue('orange.100', 'rgba(255, 255, 255, 8%)')
   const borderC = useColorModeValue('#002b36', '#FFFAEE')
   return (
     <>
-      <Layout title="Mango Yu - Homepage">
-        <Container maxW="container.md" pt={25}>
+      <Layout title="Homepage">
+        <Container maxW="container.md" pt={20}>
           <Box textAlign="center" my="5">
             <Heading as="h1" size="4xl" py="5">
               Hello
@@ -46,8 +46,8 @@ const Home = () => {
               <Image
                 width="100px"
                 height="100px"
-                src="/../public/images/Mango.png"
-                alt="Mango"
+                src="/images/Mango.png"
+                alt="Mango Profile image"
               />
               <Box display="flex" flexDirection="column">
                 <Heading as="h2" size="md">
@@ -63,8 +63,8 @@ const Home = () => {
                 Me
               </Heading>
               <Paragraph>
-                我是一名應屆畢業生，目標是後端工程師，住在台灣高雄。
-                我喜歡用代碼來解決現實生活中的很多問題。
+                我是一名應屆畢業生，目標是後端工程師，住在台灣高雄。 我喜歡用
+                Code 來解決現實生活中的很多問題。
               </Paragraph>
             </Box>
             <Box p={2} w={'60%'} mx={'auto'}>
