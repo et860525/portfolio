@@ -25,7 +25,8 @@ const LinkItem = ({ href, children }) => {
 }
 
 const Navbar = () => {
-  const bg_color = useColorModeValue('orange.100', '#373737')
+  const bg_color = useColorModeValue('orange.500', 'rgba(255, 255, 255, 12%)')
+  const color = useColorModeValue('rgba(0,0,0,85%)', '#ffffff')
   return (
     <Box position="fixed" as="nav" w="100%" bg={bg_color} zIndex="100">
       <Container
@@ -34,6 +35,7 @@ const Navbar = () => {
         p={2}
         align="center"
         justifyContent="space-between"
+        color="white"
       >
         <Flex align="center" mr={6}>
           <Heading as="h1" size="lg">
@@ -64,13 +66,18 @@ const Navbar = () => {
               ml="5"
               icon={<HamburgerIcon />}
               variant="outline"
+              color="black"
             />
             <MenuList>
               <NextLink href="/" passHref>
-                <MenuItem as={Link}>About Me</MenuItem>
+                <MenuItem as={Link} color={color}>
+                  About Me
+                </MenuItem>
               </NextLink>
               <NextLink href="/projects" passHref>
-                <MenuItem as={Link}>Project</MenuItem>
+                <MenuItem as={Link} color={color}>
+                  Project
+                </MenuItem>
               </NextLink>
             </MenuList>
           </Menu>

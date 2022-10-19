@@ -15,26 +15,16 @@ import Paragraph from '../components/paragraph'
 import { SiTwitter, SiInstagram, SiGithub } from 'react-icons/si'
 
 const Home = () => {
-  const bg = useColorModeValue('orange.100', 'rgba(255, 255, 255, 8%)')
-  const borderC = useColorModeValue('#002b36', '#FFFAEE')
+  const color = useColorModeValue('rgba(0,0,0,85%)', '#ffffff')
   return (
     <>
       <Layout title="Homepage">
-        <Container maxW="container.md" pt={20}>
+        <Container maxW="container.md" pt={20} color={color}>
           <Box textAlign="center" my="5">
             <Heading as="h1" size="4xl" py="5">
               Hello
             </Heading>
-            <Box
-              bg={bg}
-              border="1px"
-              borderColor={borderC}
-              w="50%"
-              p="4"
-              my="8"
-              mx="auto"
-              borderRadius="lg"
-            >
+            <Box border="1px" w="50%" p="4" my="8" mx="auto" borderRadius="lg">
               Welcome my website~
             </Box>
             <Box
