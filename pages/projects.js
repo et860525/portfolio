@@ -30,7 +30,24 @@ const Project = () => (
           >
             一個簡單的 RSS Picker。
           </ProjectGithubGridItem>
-        </SimpleGrid> 
+          <ProjectGithubGridItem
+            title="Express Project Architecture"
+            url="https://github.com/et860525/express-project-architecture"
+            thumbnail="/images/express-project.png"
+          >
+            紀錄 express
+            的專案架構方式，檔案分類的方式是依照，程式的工作類型與服務的對象進行分類，並使用物件導向的方式來做設計，依照
+            MVC 的思維來建構，並逐步修改其中不足的地方。
+          </ProjectGithubGridItem>
+          <ProjectGithubGridItem
+            title="My Graduation Project"
+            url="https://github.com/et860525/Graduation-Project"
+            thumbnail="/images/graduation-project.png"
+          >
+            利用 Python 製作爬蟲來抓取 Yahoo Finance
+            的股票資料，只要輸入股票名稱或是 symbols。
+          </ProjectGithubGridItem>
+        </SimpleGrid>
       </Container>
     </Layout>
   </>

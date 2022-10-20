@@ -49,7 +49,13 @@ const Home = () => {
           </Box>
           <section>
             <Box p={2} w={'60%'} mx={'auto'}>
-              <Heading as="h3" textAlign="left" mb={5}>
+              <Heading
+                as="h3"
+                textAlign="left"
+                mb="5"
+                borderBottom="2px"
+                display="inline-block"
+              >
                 Me
               </Heading>
               <Paragraph>
@@ -68,7 +74,13 @@ const Home = () => {
 
           <section>
             <Box p={2} w={'60%'} mx={'auto'} my={5}>
-              <Heading as="h3" textAlign="left" mb={5}>
+              <Heading
+                as="h3"
+                textAlign="left"
+                mb={5}
+                borderBottom="2px"
+                display="inline-block"
+              >
                 On the web
               </Heading>
               <List>
