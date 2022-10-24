@@ -12,7 +12,7 @@ import {
 import Image from 'next/image'
 import Layout from '../components/layout'
 import Paragraph from '../components/paragraph'
-import { SiTwitter, SiInstagram, SiGithub } from 'react-icons/si'
+import { SiGmail, SiInstagram, SiGithub } from 'react-icons/si'
 
 const Home = () => {
   const color = useColorModeValue('rgba(0,0,0,85%)', '#ffffff')
@@ -24,8 +24,16 @@ const Home = () => {
             <Heading as="h1" size="4xl" py="5">
               Hello
             </Heading>
-            <Box border="1px" w="50%" p="4" my="8" mx="auto" borderRadius="lg">
-              Welcome my website~
+            <Box
+              border="1px"
+              w="50%"
+              p="4"
+              my="8"
+              letterSpacing="2px"
+              mx="auto"
+              borderRadius="lg"
+            >
+              Welcome my website
             </Box>
             <Box
               display={{ md: 'flex' }}
@@ -98,6 +106,16 @@ const Home = () => {
                   >
                     <Button variant="ghost" leftIcon={<SiInstagram />}>
                       @mango70225
+                    </Button>
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    href="https://mail.google.com/mail/?view=cm&source=mailto&to=et860525@gmail.com"
+                    target="_blank"
+                  >
+                    <Button variant="ghost" leftIcon={<SiGmail />}>
+                      et860525@gmail.com
                     </Button>
                   </Link>
                 </ListItem>

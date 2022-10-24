@@ -66,7 +66,7 @@ const Navbar = () => {
               ml="5"
               icon={<HamburgerIcon />}
               variant="outline"
-              color="black"
+              _hover={{ background: 'white', color: 'black' }}
             />
             <MenuList>
               <NextLink href="/" passHref>
